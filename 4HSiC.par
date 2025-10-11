@@ -1,0 +1,1195 @@
+* Copyright (c) 1994-2017 Synopsys, Inc.
+* This parameter file and the associated documentation are proprietary
+* to Synopsys, Inc.  This parameter file may only be used in accordance
+* with the terms and conditions of a written license agreement with
+* Synopsys, Inc.  All other use, reproduction, or distribution of this
+* parameter file is strictly prohibited.
+
+* [70Pat] L. Patrick, W.J. Choyke, "Static Dielectric Constant of SiC", Physical Review B, vol. 2, pp.2255-2256, 1970.
+* [94Nin] S. Ninomiya, S. Adachi, "Optical Constants of 6H-SiC Single Crystals", Jpn.J.Appl.Phys. vol. 33, pp.2479-2482, 1994.
+* [05Pen]  G. Pensl et al., "SiC Material Properties", International Journal of High Speed Electronics and Systems, vol. 15, No. 4 pp.705-745, 2005.
+* [06Zha]  H. Zahng, L.M.Tolbert, B. Ozpineci, 2006 IEEE COMPEL Workshop, Ransselaer Polytechnic Institute, Troy, NY, pp.199-204, 2006.
+* [70Tou1] Y. S. Touloukian and C. Y. Ho (eds.), Thermal Conductivity-Nonmetallic Solids,Thermophysical Properties of Matter, TPRC Data Series, vol. 2, 
+*  IFI/Plenum: New York,1970.
+* [70Tou2] Y. S. Touloukian and E. H. Buyco, Specific Heat-Nonmetallic Solids, Thermophysical Properties of Matter, TPRC Data Series, vol. 5, 
+*  IFI/Plenum: New York, 1970.
+* [79Bur]  E. A. Burgemeister, W. von Muench, and E. Pettenpaul, "Thermal conductivity and electrical properties of 6H silicon carbide", 
+*  Journal of Applied Physics, vol. 50, no. 9, pp.5790-5794, 1979.
+* [93Mor2] D. T. Morelli et al., "Phonon-electron scattering in single crystal silicon carbide", Appl. Phys. Lett., vol. 63, no. 23, pp.3143-3145, 1993. 
+* [00Lad] M. Lades, Modeling and Simulation of Wide Bandgap Semiconductor Devices: 4H/6H-SiC, Ph.D.thesis, Technishen Universitaet Munich, Germany, 2000.
+* {97Nil] O.Nillson et al., High Temperatures-High Presures, vol. 29, pp.73-79, 1997. The data are cited in http://www.ioffe.ru/SVA/NSM/Semicond/SiC.
+* [12Asa] Y. Asahi, Physical parameters for 4H-SiC and 6H-SiC, Internal Report, Mountain View, California: Synopsys, Inc., November 2012.
+* [96Mot] J.Mottok, "Numerische Simulation und Analyse bipolar 4H-Leistungsbauelemente", Ph.D. thesis, Naturwissenschaftliche Fakulaet der Unicersitaet 
+*  Elrangen-Nurnberg, 1996. The formula is cited in [00Lad].                              
+* [04Aya] Tesfaye Ayalew, SiC Semiconductor Devices, Technology, Modeling, and Simulation,  Ph.D.thesis, Technishen Universitaet Wien, Austria, 2004. 
+* [64Cho] W. J.Choyke, L.Patrick, D.R.Hamilton, "Optical properties of 4H SiC: Absorption and luminescence", Proc. Int. Conf. on Semiconductor Physics
+*  (ed. Hulin), pp.751-758, Vieweg & Sohn, Braunschweing, 1964.
+* [65Pat] L.Patrik, W.J. Choyke, D.R.Hamilton, "Liminescence of 4H SiC, and Location of Conduction-Band Minima in SiC Polytypes", Physical Review, 
+*  vol. 137, pp.A1515-A1520, 1965.
+* [07Dav] S. Yu. Davydov, "On the electron Affinity of SiliconCarbide Polytypes", Semiconductors, vol. 41, pp.696-698, 2007. 
+* [02Lan] Landolt-Boernstein, New Series, III/41A1b, Condensed Matter Semiconductors SemiConducters GroupIV Elements, IV-IV and III-V Compounds.
+*  Part b - Electronic, Transport, Optical and Semiconductors and Other Properties, pp.35, Springer, 2002
+* [76Dub] G.B.Dubroskii, V.I.Sankin, "Structure of exciton electroabsorption in 4H SiC", Soviet Physics Solid State, pp.1847-1848, 1976
+* [98Lin] U. Lindefelt,"Doping-induced band edge displacements and band gap narrowing in3C-, 4H-, 6H-SiC, and Si", Journal of Applied Physics, vol. 84, no. 5, 
+*  pp. 2628-2637, 1998.
+* [99Per] C. Persson, U. Lindefelt, and B. E. Sernelius, "Band gap narrowing in n-type and p-type 3C-, 2H-, 4H-, 6H-SiC, and Si", Journal of Applied Physics, 
+*  vol. 86, no. 8, pp. 4419-4427, 1999.
+* [96Vol] D. Volm et al., "Determination of the electron effective-mass tensor in 4H SiC", Physical Review B, vol. 53, pp.15409-15412, 1996
+* [97Wel] G.Wellenhofer and U. Roessler, " Global Band Structure and Near-Band=Edge States", Physica Status Solidi (b), vol. 202, pp.107-123
+* [96Per] C.Persson, U.Lindefelt, "Detailed band structure for 3C-, 2H-, 4H-, 6H-SiC , and Si around the fundamental band gap, Physical Review B, vol.54,
+*  pp.10257-10260, 1996.
+* [95Har] H.Harima, S.Nakashima, T.Uemura, "Raman Scattering from anisotropic LO-phonon-plasmon-coupled mode in ntype 4H- and 6H-SiC, Journal of Applied 
+*  Physics, vol. 78, pp.1996-2005, 1995.
+* [94Son]  N.T.Son, et al., "Electron effective masses and mobilities in high-purity 6H-SiC chemical vapor deposition layers", Applied Physics Letters, 
+*  vol. 65, pp.3209-3211, 1994.
+* [12Hat] T. Hatakeyama, K. Fukuda, H.Omura, "Physical Models for SiC and Their Application to Device Simulations of SiC Insulated-Gate Bipolar Transistors",
+*  IEEE Transactions on Electron Devices, Vol. 60, No. 2, pp. 613-621, 2013 
+* [94Sch1] W. J. Schaffer et al., "Conductivity Anisotropy in Epitaxial 6H and 4H SiC", in MRS Symposium Proceedings, Diamond, SiC and Nitride Wide Bandgap 
+*  Semiconductors, vol. 339, San Francisco, CA, USA, pp. 595-600, April 1994.
+* [08Sud]  Sudarshan Khrishnamoothy, Simulation of Wide Band-Gap Devices SiC and GaN, Mountain View, California: Synopsys, Inc., 2008.
+* [96Nil]  H.Nilsson, U. Sannemo, C. Petersson, " Monte Carlo simulation of electron transport in 4H-SiC using a two-band model with multiple minima", 
+*  Journal of Applied Physics, vol. 80, pp.3365-3369, 1996.
+* [02Lin]  H. Linewith, S. Dimitriev, "Channel-Carrier Mobility Parameters for 4H SiC MOSFETS", Proc. 23rd International Conference on Microelectronics, vol. 2, 
+*  Yugoslavia, 2002.
+* [00Kha] I. A. Khan and J. A. Cooper, Jr., "Measurement of High Field Electron Transport in Silicon Carbide", IEEE transaction on Electron Devices, vol. 47, 
+*  pp.269-273, 2000.
+* [04Ber] K.Bertilsson, C.Harris, H-E.Nilsson, "Calculation of lattice heating in SiC RF power devices", Solid State Electronics, vol. 48, pp.2103-2107, 2004.
+* [94Ruf] M.Ruff, H.Miltehner, R.Helbig, "SiC Devices* Physics and Numerical Simulation", IEEE Transsaction on Electron Devices, vol. 41, pp.1040-1052, 1994. 
+* [09Tsi] A. Tsibisov, private communication, 2009.
+* [97Gal] Galeckas et al., "Auger recombination in 4H-SiC: Unusual temperature behavior", Applied Physics Letters, vol. 22, pp.3269-3271, 1997
+* [98Ram] Ramungul et al., "Carrier Lifetime Extraction from a 6H-SiC High-Voltage p-i-n Rectifier Reverse Waveform", Materials Science Forum, vol. 264-268, 
+*  pp.1065-1068, 1998.
+* [97Kon]  A.O.Konstantinov, O.Wahab, N.Nordell, U.Lindefelt, "Ionization rates and critical fileds in 4H silicon carbide", Applied Physics Letters, vol.71, 
+*  pp.90-93, 1997.
+* [09Hat] T.Hatakeyama et al., "Impact ionization coefficients of 4H silicon carbide", Applied Physics Letters, vol. 85, pp.1380-1382, 2004.
+* [92Iva] P.A.Ivanov, V.E.Chelnokov, "Recent developments in SiC single-crystal electronics", Semiconductor Sci. Technol. , vol. 7, pp.863-880, 1992.
+* [04Kag] S. Kagamihara et al., "Parameters required to simulate electric characteristics of SiC devices for n-type 4H-SiC", Journal of Applied Physics, 
+*  vol. 96, no. 10, pp. 5601-5606,2004
+* [97Bak] M.Bakowski, U. Gustafsson, U. Lindefelt, "Simulation of SiC High Power Devices", Physica Satatus Solidi (a), 162, pp.421-440, 1997.
+* [09Koi] A. Koizumi, J. Suda, and T. Kimoto, "Temperature and doping dependencies of electrical properties in Al-doped 4H-SiC epitaxial layers", Journal 
+*  of Applied Physics,vol. 106, no. 1, p. 013716, 2009.
+* [04Mat] H.Matsuura et al., "Dependence of acceptor levels and hole mobility on acceptor density and temperature in Al-doped p-type 4H-SiC epilayers", 
+*  Journal of Applied Physics, vol. 96, pp.2708-2715, 2004
+* [05Per] J. Pernot, S. Contreras and J. Camassel, "Electrical transport properties of aluminum implanted 4H-SiC", Journal of Applied Physics, vol. 98,
+*  no. 2, p. 023706, 2005.
+* [94Sch] A.Shoener, Elektrische Characteriseerung von flachen und tiefen Stoerstellen in 4H- 6H- und 15R-Siliciumkarbid, Ph.D.thesis, University of 
+*  Erlangen-Nurnberg, 1994. The data is cited in [05Pen].
+* [96Sch] A.Shoener et al., "Dependence of the alminium ionization energy on doping concentartion and compensation in 6H-SiC", Institute of Physics Conf.
+*  Series, no.142, pp.493-496, 1996
+* [96Pen] G. Pensl et al, " Electrical properties of silicon carbide polytypes", Institute of Physics Conf.Sereies, no. 142, pp.275-280, 1996.
+* [96Sti] Th. Stiasny, R. Helberg, "Impurities in 4H and 6H SiC crystals, characterized by thermoluminescence and thermally stimulated conductivity", 
+*  Institute of Physics Conf. Series, no.142, pp.389-392, 1996.         
+* [98Ito] H. Itoh, T. Troffer, G. Pensl, "Coimplantation Effects on the Electrical Properties of Boron and Aluminum Acceptance in 4H-SiC", 
+*  Material Science Forum, vol. 264-268, pp.685-688, 1998.
+* [63Add] A.Addamiano, R.M.Potter, V.Ozarow, "Photoluminescence of a-SiC", Journal of Electrochemical Society, vol. 113, pp.517-520, 1963.       
+* [77Vod] Yu.A.Vodakov, N.Zhumaev, B.P.Zverev, G.A.Lomakina, E.N.Mokhov, V.G.Oding, V.V.Semenov, Yu.F.Simakin, "Boron-doped silicon carbide", Soviet Physics 
+*  Semiconductor, vol. 11, pp.214-217, 1977.
+* [85Ani] M.M.Anikin, A.A.Lebedev, A.L.Syrkin, A.V.Suvorov, "Investigation of deep levels in SiC by capacitance spectroscopy methods", Soviet Physics 
+*  Semiconductors, vol. 19, pp.69-71, 1985.
+* [90Sut] W.Suttrop, G.Pensl, P.Lang, "Boron-Related Deep Centers in 6H-SiC", Applied Physics A, vol. 51, pp.231-237, 1990.
+* [96Sti1] Th. Stiasny, R. Helberg, " The trap emptying process of low temperature thermoluminescence of 6H-SiC single crystals", Journal of Applied Physics, 
+*  vol. 79, pp.4152-4156, 1996. 
+* [96Sti2] Th. Stiasny, R. Helberg, "Impurities in 4H and 6H SiC crystals, characterized by thermoluminescence and thermally stimulated conductivity", 
+*  Int. Phys. Conf. Ser. no. 142, pp.389-392, 1996.
+* [97Sti] Th. Stiasny, R. Helberg, "Thermoluminescence and Related Electronic Process of 4H/6H-SiC", Physica Status Solidi (a), vol. 162, pp.239-pp.249, 1997.
+* [06Rao] S.Rao, T.P.Chow, I.Bhat, "Depenedence of the Ionization Energy of Phosphorus Donor in 4H-SiC on Doping Concentartion" , Material Science Forum, 
+*  vol.527-579, pp.597-600, 2006
+* [06Son] N.T.Son et al., " Electron paramagnetic resonance and theoretical studies of shallow phosphorus centers in 3C-, 4H-, 6H-SiC", Physical Review B,
+*  vol.73, pp.075201, 2006
+* [05Iva] I.G.Ivanov, A.Henry, E.Janzen, " Ionization energies of phosphorus and nitrogen donors and aluminum acceptors in 4H silicon carbide from 
+*  donor-acceptor pair emission", Physical Review B, vol.71, pp.241201(R), 2005
+* [04Sch] F.Schmid et al., "Electrical activation of implanted phosphorus ions in [0001]- and [11-20]-oriented 4H-SiC" , Journal of Applied Physics, vol 91, 
+*  no.11 pp.9182-9186, 2002
+* [02Sch] F.Schmid, G.Pensl, "Comparison of the electrical activation of P+ and N+ ions co-implanted along with Si+ or C+ ions into 4H-SiC",  Applied Physics
+*  Letters, vol 84, no.16 pp.3064-3066, 2004
+* [02Lau] M.Laube et al., "Electrical activation of high concentartions of N+ and P+ ions implanted into 4H-SiC", Journal of Applied Physics, vol.92, no.1, 
+*  pp.549-554, 2002
+* [02Wan] R.Wang, I.Bhat, T.P.Chow, " Epitaxial growth of n-type SiC using phosphite and nitrogen as the precursors",  Journal of Applied Physics, vol. 92, 
+*  no.12, pp.7587- 7592, 2002
+* [00Cap] M.A.Capano et al., "Ionization energies and electron mobilities in phosphorus and nitrogen-implanted 4H-silicon carbide", Journal of Applied Physics, 
+*  vol.87, no.12, pp.8773-8777,2000
+* [14Niw] H.Niwa, J.Suda,T.Kimoto, "Tempearture Dependence of Impact Ionization Coefficients in 4H-SiC", Material Science Forum, to appear, 2014
+* [17Nog] M. Noguchi et al., “Determination of intrinsic phonon-limited mobility and carrier transport property extraction of 4H-SiC MOSFETs,” in IEDM Technical Digest,
+*  San Francisco, CA, USA, pp. 219–222, December 2017.
+* [18Nog] M. Noguchi et al., “Hall effect mobility for SiC MOSFETs with increasing dose of nitrogen implantation into channel region,” Japanese Journal of Applied Physics,
+*  vol. 57, no. 4S, p. 04FR13, 2018.
+
+Epsilon
+  {
+    * Ratio of the permittivities of material and vacuum
+
+    * perp. to c-axis
+
+    epsilon = 9.66 #[70Pat], ioffe database, 6H-SiC
+    * epsilon = 9.76 #[94Nin, 05Pen], 6H-SiC+4H-SiC
+  }
+
+Epsilon_aniso
+  {
+    #parallel to c-axis
+    epsilon = 10.03 #ioffe database, [70Pat], ratio of 1.04
+    #epsilon = 9.98 #[94Nin], 6H-SiC
+    #epsilon = 10.32 #[05Pen], 4H-SiC
+    #epsilon = 10.1 #[06Zha], 4H-SiC
+  }
+
+RefractiveIndex
+  {
+    * Optical Refractive Index
+    * refractiveindex() = refractiveindex * (1 + alpha * (T-Tpar))
+    Tpar = 3.0000e+02 #[K]
+    refractiveindex = 3.11 #[1]
+    alpha = 2.0000e-04 #[1/K]
+    * Gain dependence of refractive index in active region:
+    * a) Linear model: delta n = a0 * ( (n+p)/(2 * N0) - 1)
+    * b) Logarithmic model: delta n = a0 * log ( (n+p)/(2 * N0) )
+    * where n/p are the carrier densities in the active region. 
+    a0 = 0.0000e+00 #[1]
+    N0 = 1.0000e+18 #[1/cm^3]
+  }
+
+ComplexRefractiveIndex
+  { 
+    * Complex refractive index model: n_complex = n + i*k (unitless)
+    *  with n = n_0 + delta_n_lambda + delta_n_T + delta_n_carr + delta_n_gain
+    *  k = k_0 + delta_k_lambda + delta_k_carr
+    * Base refractive index and extinction coefficient: n_0, k_0
+    * Wavelength dependence (real and imag):
+    *  Formula 0: delta_n_lambda = Cn_lambda * lambda + Dn_lambda * lambda^2
+    *             delta_k_lambda = Ck_lambda * lambda + Dk_lambda * lambda^2
+    *  Formula 1: Read tabulated values
+    *             NumericalTable (...)
+    *  Formula 2: Read tabulated values from file
+    *             NumericalTable = <string>
+    * Temperature dependence (real):
+    *  delta_n_T = n_0 * ( Cn_temp * (T-Tpar))
+    * Carrier dependence (real)
+    *  delta_n_carr = - Cn_carr * (const.) * (n/m_e + p/m_h)
+    * Carrier dependence (imag)
+    *  delta_k_carr = 1 / (4*PI) * (wavelength^Gamma_k_carr_e*Ck_carr_e*n + wavelength^Gamma_k_carr_h*Ck_carr_h*p)
+    * Gain dependence (real)
+    *  lin: delta_n_gain = Cn_gain * ( (n+p)/(2 * Npar) - 1)
+    *  log: delta_n_gain = Cn_gain * log ( (n+p)/(2 * Npar ) )
+
+    n_0 = 3.11 #[1]
+    k_0 = 0.0000e+00 #[1]
+    Cn_lambda = 0.0000e+00 #[um^-1]
+    Dn_lambda = 0.0000e+00 #[um^-2]
+    Ck_lambda = 0.0000e+00 #[um^-1]
+    Dk_lambda = 0.0000e+00 #[um^-2]
+    Cn_temp = 2.0000e-04 #[K^-1]
+    Cn_carr = 1 #[1]
+    Ck_carr = 0.0000e+00, 0.0000e+00 #[cm^2]
+    Gamma_k_carr = 1, 1 #[1]
+    Cn_gain = 0.0000e+00 #[1]
+    Npar = 1.0000e+18 #[cm^-3]
+        
+    Formula = 1
+
+    TableInterpolation = PositiveSpline, PositiveSpline
+    * Reference: http://refractiveindex.info/?group=CRYSTALS&material=SiC, Sopra N&K database
+    NumericalTable (
+      0.1900 4.020751 1.717855;
+      0.1950 4.041821 1.334778;
+      0.2000 3.960275 1.060019;
+      0.2050 3.863369 0.856408;
+      0.2100 3.758769 0.702193;
+      0.2150 3.657059 0.582250;
+      0.2200 3.564977 0.486509;
+      0.2250 3.472005 0.415198;
+      0.2300 3.383696 0.363262;
+      0.2350 3.312845 0.325046;
+      0.2400 3.252266 0.307453;
+      0.2450 3.196594 0.298516;
+      0.2500 3.132928 0.209827;
+      0.2550 3.078387 0.207218;
+      0.2600 3.044337 0.206303;
+      0.2650 3.024987 0.203478;
+      0.2700 3.014082 0.201450;
+      0.2750 3.000655 0.199471;
+      0.2800 2.989755 0.194555;
+      0.2850 2.981343 0.189714;
+      0.2900 2.973630 0.185171;
+      0.2950 2.963624 0.182127;
+      0.3000 2.953247 0.179501;
+      0.3050 2.943011 0.176861;
+      0.3100 2.933123 0.173989;
+      0.3150 2.924105 0.170626;
+      0.3200 2.915195 0.166632;
+      0.3250 2.905958 0.161861;
+      0.3300 2.895704 0.155674;
+      0.3350 2.883269 0.146928;
+      0.3400 2.869993 0.137240;
+      0.3450 2.856731 0.127684;
+      0.3500 2.844246 0.119372;
+      0.3550 2.833586 0.113844;
+      0.3600 2.824064 0.110001;
+      0.3650 2.815230 0.107109;
+      0.3700 2.806971 0.105000;
+      0.3750 2.799121 0.103454;
+      0.3800 2.791688 0.102236;
+      0.3850 2.784667 0.101116;
+      0.3900 2.777977 0.100462;
+      0.3950 2.771535 0.100823;
+      0.4000 2.765374 0.100382;
+      0.4050 2.759530 0.097289;
+      0.4100 2.754008 0.088053;
+      0.4150 2.748819 0.068689;
+      0.4200 2.743936 0.044285;
+      0.4250 2.739334 0.020476;
+      0.4300 2.735025 0.002138;
+      0.4350 2.731026 0.005309;
+      0.4400 2.727252 0.005583;
+      0.4450 2.723599 0.003441;
+      0.4500 2.719950 0.000759;
+      0.4550 2.716183 0.000148;
+      0.4600 2.712374 0.000005;
+      0.4650 2.708638 0.000000;
+      0.4700 2.705018 0.000000;
+      0.4750 2.701560 0.000000;
+      0.4800 2.698250 0.000000;
+      0.4850 2.695061 0.000000;
+      0.4900 2.692008 0.000000;
+      0.4950 2.689100 0.000000;
+      0.5000 2.686314 0.000000;
+      0.5050 2.683618 0.000000;
+      0.5100 2.680983 0.000000;
+      0.5150 2.678371 0.000000;
+      0.5200 2.675811 0.000000;
+      0.5250 2.673349 0.000000;
+      0.5300 2.671026 0.000000;
+      0.5350 2.668884 0.000000;
+      0.5400 2.666875 0.000000;
+      0.5450 2.664923 0.000000;
+      0.5500 2.662983 0.000000;
+      0.5550 2.661004 0.000000;
+      0.5600 2.659001 0.000000;
+      0.5650 2.657001 0.000000;
+      0.5700 2.654984 0.000000;
+      0.5750 2.652927 0.000000;
+      0.5800 2.650874 0.000000;
+      0.5850 2.648888 0.000000;
+      0.5900 2.647024 0.000000;
+      0.5950 2.645344 0.000000;
+      0.6000 2.643813 0.000000;
+      0.6050 2.642368 0.000000;
+      0.6100 2.641001 0.000000;
+      0.6150 2.639695 0.000000;
+      0.6200 2.638438 0.000000;
+      0.6250 2.637212 0.000000;
+      0.6300 2.635993 0.000000;
+      0.6350 2.634752 0.000000;
+      0.6400 2.633500 0.000000;
+      0.6450 2.632252 0.000000;
+      0.6500 2.630993 0.000000;
+      0.6550 2.629714 0.000000;
+      0.6600 2.628437 0.000000;
+      0.6650 2.627191 0.000000;
+      0.6700 2.626013 0.000000;
+      0.6750 2.624940 0.000000;
+      0.6800 2.623937 0.000000;
+      0.6850 2.622963 0.000000;
+      0.6900 2.621994 0.000000;
+      0.6950 2.621002 0.000000;
+      0.7000 2.620000 0.000000;
+      0.7050 2.619000 0.000000;
+      0.7100 2.618000 0.000000;
+      0.7150 2.617000 0.000000;
+      0.7200 2.616000 0.000000;
+      0.7250 2.615003 0.000000;
+      0.7300 2.613995 0.000000;
+      0.7350 2.612963 0.000000;
+      0.7400 2.611938 0.000000;
+      0.7450 2.610938 0.000000;
+      0.7500 2.610018 0.000000;
+      0.7550 2.609228 0.000000;
+      0.7600 2.608499 0.000000;
+      0.7650 2.607776 0.000000;
+      0.7700 2.606973 0.000000;
+      0.7750 2.606022 0.000000;
+      0.7800 2.605000 0.000000;
+      0.7850 2.603979 0.000000;
+      0.7900 2.603014 0.000000;
+      0.7950 2.602153 0.000000;
+      0.8000 2.601375 0.000000;
+      0.8050 2.600651 0.000000;
+      0.8100 2.600015 0.000000;
+      0.8150 2.599482 0.000000;
+      0.8200 2.598999 0.000000;
+      0.8250 2.598526 0.000000;
+      0.8300 2.597969 0.000000;
+      0.8350 2.597270 0.000000;
+      0.8400 2.596502 0.000000;
+      0.8450 2.595725 0.000000;
+      0.8500 2.595032 0.000000;
+      0.8550 2.594481 0.000000;
+      0.8600 2.593998 0.000000;
+      0.8650 2.593525 0.000000;
+      0.8700 2.592967 0.000000;
+      0.8750 2.592268 0.000000;
+      0.8800 2.591502 0.000000;
+      0.8850 2.590729 0.000000;
+      0.8900 2.590016 0.000000;
+      0.8950 2.589404 0.000000;
+      0.9000 2.588874 0.000000;
+      0.9050 2.588402 0.000000;
+      0.9100 2.588018 0.000000;
+      0.9150 2.587733 0.000000;
+      0.9200 2.587499 0.000000;
+      0.9250 2.587274 0.000000;
+      0.9300 2.586966 0.000000;
+      0.9350 2.586519 0.000000;
+      0.9400 2.586002 0.000000;
+      0.9450 2.585476 0.000000;
+      0.9500 2.585034 0.000000;
+      0.9550 2.584732 0.000000;
+      0.9600 2.584499 0.000000;
+      0.9650 2.584273 0.000000;
+      0.9700 2.583965 0.000000;
+      0.9750 2.583519 0.000000;
+      0.9800 2.583002 0.000000;
+      0.9850 2.582479 0.000000;
+      0.9900 2.582025 0.000000;
+      0.9950 2.581693 0.000000;
+      1.0000 2.581437 0.000000;
+      1.0050 2.581212 0.000000;
+      1.0100 2.580992 0.000000;
+      1.0150 2.580751 0.000000;
+      1.0200 2.580500 0.000000;
+      1.0250 2.580250 0.000000;
+      1.0300 2.579999 0.000000;
+      1.0350 2.579749 0.000000;
+      1.0400 2.579499 0.000000;
+      1.0450 2.579250 0.000000;
+      1.0500 2.579001 0.000000;
+      1.0550 2.578750 0.000000;
+      1.0600 2.578500 0.000000;
+      1.0650 2.578250 0.000000;
+      1.0700 2.578000 0.000000;
+      1.0750 2.577750 0.000000;
+      1.0800 2.577500 0.000000;
+      1.0850 2.577251 0.000000;
+      1.0900 2.576993 0.000000;
+      1.0950 2.576711 0.000000;
+      1.1000 2.576437 0.000000;
+      1.1050 2.576193 0.000000;
+      1.1100 2.576018 0.000000;
+      1.1150 2.575982 0.000000;
+      1.1200 2.576000 0.000000;
+      1.1250 2.576018 0.000000;
+      1.1300 2.575978 0.000000;
+      1.1350 2.575769 0.000000;
+      1.1400 2.575501 0.000000;
+      1.1450 2.575233 0.000000;
+      1.1500 2.575018 0.000000;
+      1.1550 2.574981 0.000000;
+      1.1600 2.575000 0.000000;
+      1.1650 2.575016 0.000000;
+      1.1700 2.574985 0.000000;
+      1.1750 2.574768 0.000000;
+      1.1800 2.574500 0.000000;
+      1.1850 2.574234 0.000000;
+      1.1900 2.574012 0.000000;
+      1.1950 2.573983 0.000000;
+      1.2000 2.574000 0.000000;
+      1.2050 2.574016 0.000000;
+      1.2100 2.573992 0.000000;
+      1.2150 2.573768 0.000000;
+      1.2200 2.573501 0.000000;
+      1.2250 2.573235 0.000000;
+      1.2300 2.572999 0.000000;
+      1.2350 2.572829 0.000000;
+      1.2400 2.572750 0.000000;
+      1.2450 2.572797 0.000000;
+      1.2500 2.573000 0.000000;
+    )
+    Tpar = 3.0000e+02 #[K]
+  }
+
+* SpectralConversion
+*   { 
+*     * Spectral Conversion Model
+*     * No default model, user has to define.
+*     * All wavelength parameters should be in nanometers.
+*     * Choice of Analytic or NumericalTable selected in Physics section of region
+*     * ConversionEfficiency = float     * ratio of absorbed photons that are reemitted.
+*     * AbsorptionScaling = float        * scale absorption
+*     * EmissionScaling = float          * scale emission
+*     * Analytic (
+*     *     AbsorptionProfile = (
+*     *       Gaussian(lambda0 sigma peakvalue dc_offset lambda_range0 lambda_range1)
+*     *       Lorentzian(lambda0 width peakvalue dc_offset lambda_range0 lambda_range1)
+*     *       ...
+*     *     )
+*     *     EmissionProfile = (
+*     *       Gaussian(lambda0 sigma peakvalue dc_offset lambda_range0 lambda_range1)
+*     *       Lorentzian(lambda0 width peakvalue dc_offset lambda_range0 lambda_range1)
+*     *      ...
+*     *     )
+*     *   )
+*     * NumericalTable (
+*     *     AbsorptionProfile = (
+*     *       lambda0 value0
+*     *       lambda1 value1
+*     *       ...
+*     *     )
+*     *     EmissionProfile = (
+*     *       lambda0 value0
+*     *       lambda1 value1
+*     *       ...
+*     *     )
+*     *   )
+*     *  ConversionEfficiency = 1.0
+*   } 
+
+LatticeHeatCapacity
+  {	
+    * Lattice Heat Capacity
+
+    cv = -2.139 #fit to the formula of [96Mot] in [00Lad]
+    cv_b = 2.242e-2 #fit to the formula of [96Mot] in [00Lad]
+    cv_c = -3.130e-5 #fit to the formula of [96Mot] in [00Lad]
+    cv_d = 1.546e-8 #fit to the formula of [96Mot] in [00Lad]
+  }
+
+Kappa
+  {
+    * perp. to c-axis
+
+    Formula = 0
+
+    1/kappa = 2.5e-3 #[70Tou1,79Bur,93Mor2 in 00Lad] , 4H-SiC+6H-SiC+3C-SiC
+    1/kappa_b = 2.75e-4 #[70Tou1,79Bur,93Mor2 in 00Lad] , 4H-SiC+6H-SiC+3C-SiC
+    1/kappa_c = 1.3e-6 #[70Tou1,79Bur,93Mor2 in 00Lad] , 4H-SiC+6H-SiC+3C-SiC
+  }
+
+Kappa_aniso 
+  {
+    * parallel to c-axis
+
+    Formula = 0
+
+    1/kappa = -0.1882 #[97Nil], [12Asa]
+    1/kappa_b =	1.637e-3 #[97Nil], [12Asa]
+    1/kappa_c = -2.711e-20 #[97Nil], [12Asa]
+
+    * Formula = 0
+
+    * 1/kappa = 3.57e-3 #[70Tou,79Bur,93Mor2 in 00Lad], applying the anisotropy of kappa(<0001>)/kappa(<1-1-20>) = 0.7
+    * 1/kappa_b = 3.93e-4 #[70Tou,79Bur,93Mor2 in 00Lad], applying the anisotropy of kappa(<0001>)/kappa(<1-1-20>) = 0.7
+    * 1/kappa_c = 1.86e-6 #[70Tou,79Bur,93Mor2 in 00Lad], applying the anisotropy of kappa(<0001>)/kappa(<1-1-20>) = 0.7
+  }
+
+* CarrierThermalConductivity
+*   { 
+*     * Lower limit for the carrier thermal conductivities,
+*     * expressed as a fraction of the lattice
+*     * thermal conductivity K_L (i.e. of kappa, see above)
+*     K_n/K_L = 1.0000e-34 #[1]
+*     K_p/K_L = 1.0000e-34 #[1]
+*   }
+
+Ionization
+  {
+    Species ("NitrogenConcentration")
+      {
+        * 4H-SiC Nitrogen, average value
+        E_0 = 0.1
+        alpha = 4.0000e-08
+        g = 2.0
+        Xsec = 1.0000e-12
+      } 
+
+    Species ("NitrogenConcentration_split1")
+      {
+        * 4H-SiC Nitrogen, hexagonal site
+        E_0 = 0.0709 #4H-SiC h, [04Kag]
+        alpha = 3.3800e-08 #4H-SiC h, [04Kag]
+        g = 2.0 #4H-SiC h
+        Xsec = 1.0000e-12 #4H-SiC h
+
+        * E_0 = 0.052 #4H-SiC h derived from [05Pen] (values averaged)
+        * alpha = 0
+      }                                  
+                 
+    Species ("NitrogenConcentration_split2")
+      {                                                       
+        * 4H-SiC Nitrogen, cubic site
+        E_0 = 0.1237 #4H-SiC k, [04Kag]
+        alpha = 4.6500e-08 #4H-SiC k, [04Kag]
+        g = 2.0 #4H-SiC k
+        Xsec = 1.0000e-12 #4H-SiC k
+
+        * E_0 = 0.160 #4H-SiC k, [09Tsi]
+        * alpha = 6.6500e-08 #4H-SiC k, [09Tsi]
+
+        * E_0 = 0.099 #4H-SiC k, derived from [05Pen] (values averaged)
+        * alpha = 0.0
+
+      }                                                   
+
+    Species ("BoronConcentration")
+      {                                       
+        E_0 = 0.293 #4H-SiC averaged value, 0.285-0.310 (B Conc<2e19cm-3), [96Pen],[96Sti],[98Ito]
+        alpha = 0.0               
+        g = 4.0
+        Xsec = 1.0000e-12
+      }
+
+    Species ("AluminumConcentration") 
+      {
+        E_0 = 0.265 #4H-SiC, [09Koi]
+        alpha = 3.60e-08 #4H-SiC, [09Koi]
+        g = 4.0
+        Xsec = 1.0000e-12
+
+        * E_0 = 0.220 #4H-SiC, [04Mat]
+        * alpha = 1.90e-8 #4H-SiC, [04Mat]
+
+        * E_0 = 0.205 #4H-SiC, [05Per]
+        * alpha = 1.70e-8 #4H-SiC, [05Per]
+      }
+
+    Species ("PhosphorusConcentration_split1") 
+      {
+        * 4H-SiC Phosphorus hexagonal site [06Rao][04Sch][02Sch][02Lau][00Cap][01Wan]
+        E_0 = 0.055 #4H-SiC h
+        alpha = 6.386e-9 #4H-SiC h
+        g = 2.0
+        Xsec = 1.0000e-12
+      }
+                                                        
+    Species ("PhosphorusConcentration_split2")
+      {                                           
+        * 4H-SiC Phosphorus cubic site [06Rao][04Sch][02Sch][02Lau][00Cap][01Wan]
+        E_0 = 0.102 #4H-SiC, cubic site 
+        alpha = 5.786e-9 #4H-SiC, cubic site 
+        g = 2.0
+        Xsec = 1.0000e-12
+      }
+  }
+
+Bandgap
+  { 
+    * Eg = Eg0 + dEg0 + alpha Tpar^2 / (beta + Tpar) - alpha T^2 / (beta + T)
+    * dEg0(<bgn_model_name>) is a band gap correction term.  It is used together with
+    * an appropriate BGN model, if this BGN model is chosen in Physics section
+    * Parameter 'Tpar' specifies the value of lattice 
+    * temperature, at which parameters below are defined
+    * Chi0 is electron affinity.
+
+    Tpar = 0.0
+
+    Chi0 = 3.24 #[07Dav]
+    Bgn2Chi = 0.5
+    Eg0	= 3.285 #Egx=3.265eV at 4K [64Cho][65Pat], 3.235eV at 300K [02Lan], Ex=0.02eV [76Dub]
+    alpha = 0.033 #[00Lad]
+    beta = 1.0e5 #[00Lad]
+  }
+
+* OldSlotboom {} 
+
+Slotboom
+  { 
+    * deltaEg = dEg0 + Ebgn ( ln(N/Nref) + [ (ln(N/Nref))^2 + 0.5]^1/2 )
+    * dEg0 is defined in BandGap section 
+
+    Nref = 1.e+17 #4H-SiC ntype [00Lad]
+    Ebgn = 0.009 #4H-SiC ptype, 6H-SiC ntype/ptype [00Lad]
+
+    * Ebgn = 0.02 #4H-SiC ntype [00Lad]
+  }
+
+* delAlamo {}
+
+* Bennett {}
+
+JainRoulston
+  {
+    A_n = 1.791E-08 #4H-SiC n-type, [99Per]
+    B_n = 8.927E-07 #4H-SiC n-type, [99Per]
+    C_n = 2.200E-12 #4H-SiC n-type, [99Per]
+    D_n = 6.240E-12 #4H-SiC n-type, [99Per]
+    A_p = -3.507E-08 #4H-SiC p-type, [99Per]
+    B_p = 2.312E-06 #4H-SiC p-type, [99Per]
+    C_p = 6.740E-12 #4H-SiC p-type, [99Per]
+    D_p = 1.070E-12 #4H-SiC p-type, [99Per]
+
+    #A_n = 1.500E-08 #4H-SiC n-type, [98Lin]
+    #B_n = 6.008E-07 #4H-SiC n-type, [98Lin]
+    #C_n = 2.930E-12 #4H-SiC n-type, [98Lin]
+    #D_n = 8.740E-12 #4H-SiC n-type, [98Lin]
+    #A_p = 1.300E-08 #4H-SiC p-type, [98Lin]
+    #B_p = 4.965E-07 #4H-SiC p-type, [98Lin]
+    #C_p = 1.150E-12 #4H-SiC p-type, [98Lin]
+    #D_p = 3.870E-13 #4H-SiC p-type, [98Lin]
+  }
+
+* FreeCarrierAbsorption {}
+
+* QWStrain {}
+
+eDOSMass
+  {
+    * For effective mass specification Formula1 (me approximation) or Formula2 (Nc300) can be used.
+    * Formula1:
+    * me/m0 = [ (6 * mt)^2 *  ml ]^(1/3) + mm
+    * mt = a[Eg(0)/Eg(T)] 
+    * Nc(T) = 2(2pi*kB/h_Planck^2*me*T)^3/2 = 2.5094e19 ((me/m0)*(T/300))^3/2 
+
+    Formula = 1
+    a = 0.95481 #med/m0 = Mc^(2/3)*me, Mc=3 for 4H-SiC
+    ml = 0.95481 #Nc(T) = 2*(2pi*kb/h_Plank^2*med*T)^(3/2) = 2.5094e19*{(med/m0)*(T/300)}^(3/2)
+    mm = -2.3367 #the values of a, ml, and mm correspond to me(DOS effective mass of electron)/m0 = 0.401
+    
+    * Formula = 2
+    * Nc300 = 1.9150e19 #at T = 300K [97Wel] and adjust the temperature dependence between 300K and 1000K in [97Wel]	
+
+    * Nc300 = 1.7193E+19 #me(DOS effective mass of electron)/m0 = 0.367 [96Per], 0.390 [96Vol], 0.394 [97Wel] at T=0K. 
+    *                    #Using the ratio between T=0K and T=300K in [97Wel], med/m0 = 0.777, 0.826, 0.835 at T=300K. 
+    *                    #Correpondig Nc300 = 1.7193e19, 1.8828e19, 1.9150e19
+  }
+
+hDOSMass
+  {
+    * For effective mass specification Formula1 (mh approximation)or Formula2 (Nv300) can be used.
+    * Formula1:
+    * mh =  m0*{[(a+bT+cT^2+dT^3+eT^4)/(1+fT+gT^2+hT^3+iT^4)]^(2/3)+mm}
+    * Nv(T) = 2.5094e19 ((mh/m0)*(T/300))^3/2 
+
+    Formula =	1
+    a =	1.0 #4H-SiC [97Wel],[12Hat]
+    b =	6.92e-2
+    c =	0.0
+    d =	0.0
+    e =	1.88e-6
+    f =	0.0
+    g =	6.58e-4
+    h =	0.0
+    i =	4.32e-7
+    mm = 0.0
+
+    * Nv300 = 1.0752e20	#corresponds to parameter set above
+
+    * Formula =	2
+    * Nv300 = 2.4942e19	#4H-SiC, ioffe database
+  }
+
+* SchroedingerParameters:{}
+
+* QuantumPotentialParameters {}
+
+* QuantumPotentialParameters "100" {}
+
+* QuantumPotentialParameters "110" {}
+
+* QuantumPotentialParameters "111" {}
+
+ConstantMobility
+  {
+    mumax = 1140.0, 120.0 #[04Aya]
+    Exponent = 2.7, 3.4 #[04Aya]
+  }
+
+ConstantMobility_aniso
+  {
+    mumax = 1140.0, 125.0 #[04Aya], for electrons mu//=mu_perp/0.83 [94Sch1], for holes mu//=mu_perp
+    Exponent = 2.4, 2.15 #[04Aya]
+  }
+
+DopingDependence		       
+  {
+    * perp. to c-axis
+
+    * formula = 1, 1
+    mumin1 = 40.0, 15.9 #4H-SiC [04Aya] for electron, [94Sch1] for hole
+    mumin2 = 40.0, 15.9 #4H-SiC [04Aya] for electron, [94Sch1] for hole
+    Pc = 0.0, 0.0 #4H-SiC [94Sch1]
+    Cr = 1.94e17, 1.76e19 #4H-SiC [94Sch1]
+    alpha = 0.61, 0.34 #4H-SiC [94Sch1]
+    mu1 = 0.0, 0.0 #4H-SiC [94Sch1]
+    Cs = 3.43e20, 6.10e20
+    beta = 2.0, 2.0
+
+    formula = 2, 2
+    Ar_mumin = 40.0, 0.0 #[08Sud] for electron, [12Hat] for hole
+    Ar_alm = -1.536, -0.570 #[08Sud] for electron, [12Hat] for hole
+    Ar_mud = 910, 113.5 #[08Sud] for electron, [12Hat] for hole
+    Ar_ald = -2.397, -2.6 #[08Sud] for electron, [12Hat] for hole
+    Ar_N0 = 2.0e17, 2.4e18 #[08Sud] for electron, [12Hat] for hole
+    Ar_alN = 0.75, 2.9 #[08Sud] for electron, [12Hat] for hole
+    Ar_a = 0.76, 0.69 #[08Sud] for electron, [12Hat] for hole
+    Ar_ala = 0.722, -0.2 #[08Sud] for electron, [12Hat] for hole
+  }
+
+DopingDependence_aniso		      
+  {
+    * perp. to c-axis
+
+    * formula = 1, 1
+    mumin1 = 40.0, 15.9 #4H-SiC [04Aya] for electron, [94Sch1] for hole
+    mumin2 = 40.0, 15.9 #4H-SiC [04Aya] for electron, [94Sch1] for hole
+    Pc = 0.0, 0.0 #4H-SiC [94Sch1]
+    Cr = 1.94e17, 1.76e19 #4H-SiC [94Sch1]
+    alpha = 0.61, 0.34 #4H-SiC [94Sch1]
+    mu1 = 0.0, 0.0 #4H-SiC [94Sch1]
+    Cs = 3.43e20, 6.1000e20
+    beta = 2.0, 2.0
+
+    formula = 2, 2
+    Ar_mumin = 40, 0.0 #[08Sud] for electron, [12Hat] for hole
+    Ar_alm = -1.536, -0.57 #[08Sud] for electron, [12Hat] for hole
+    Ar_mud = 1100, 98.745 #for electrons mu//=mu_perp/0.83 [94Sch1], for holes mu//=mu_perp*0.87 [13Hat]
+    Ar_ald = -2.397, -2.6 #[08Sud] for electron, [12Hat] for hole
+    Ar_N0 = 2.0e17, 2.4e18 #[08Sud] for electron, [12Hat] for hole
+    Ar_alN = 0.75, 2.9 #[08Sud] for electron, [12Hat] for hole
+    Ar_a = 0.76, 0.69 #[08Sud] for electron, [12Hat] for hole
+    Ar_ala = 0.722, -0.2 #[08Sud] for electron, [12Hat] for hole
+  }
+
+EnormalDependence		       
+  {
+    * perp. to c-axis
+
+    B = 1.0, 9.92e06 #4H-SiC [17Nog], [18Nog] for electrons and [02Lin] for holes
+    C = 1.0e4, 2.95e03 #4H-SiC [17Nog], [18Nog] for electrons and [02Lin] for holes
+    N0 = 1.0, 1.0
+    lambda = 0.0, 0.0 #related to [17Nog], [18Nog] calibration
+    k = 0.4, 0.4
+    delta = 7.67e13, 2.0546e14 #4H-SiC [17Nog], [18Nog] for electrons and old default for holes
+    A = 2.0, 2.0
+    alpha = 0.0, 0.0
+    N1 = 1.0, 1.0
+    nu = 1.0, 1.0
+    eta = 1.0e50, 1.0e+50
+    l_crit = 1.0e-06, 1.0e-06
+
+    * B = 1e6, 9.92e06 #4H-SiC [02Lin]
+    * C = 580, 2.95e03 #4H-SiC [02Lin]
+    * N0 = 1, 1
+    * lambda = 0.125, 0.0317 #4H-SiC  [02Lin]
+    * k = 0.4, 0.4
+    * delta = 5.82e14, 2.0546e14
+    * A = 2.0, 2.0
+    * alpha = 0.0, 0.0
+    * N1 = 1.0, 1.0
+    * nu = 1.0, 1.0
+    * eta = 5.82e30, 2.055e+30
+    * l_crit = 1.0e-06, 1.0e-06
+  }
+
+EnormalDependence_aniso		       
+  {
+    * parallel. to c-axis
+    * same parameters as for perp. to c-axis
+
+    B = 1.0, 9.92e06 #4H-SiC [17Nog], [18Nog] for electrons and [02Lin] for holes
+    C = 1.0e4, 2.95e03 #4H-SiC [17Nog], [18Nog] for electrons and [02Lin] for holes
+    N0 = 1.0, 1.0
+    lambda = 0.0, 0.0 #related to [17Nog], [18Nog] calibration
+    k = 0.4, 0.4
+    delta = 7.67e13, 2.0546e14 #4H-SiC [17Nog, [18Nog]] for electrons and old default for holes
+    A = 2.0, 2.0
+    alpha = 0.0, 0.0
+    N1 = 1.0, 1.0
+    nu = 1.0, 1.0
+    eta = 1.0e50, 1.0e+50
+    l_crit = 1.0e-06, 1.0e-06
+
+    * B = 1e6, 9.92e06 #4H-SiC [02Lin]
+    * C = 580, 2.95e03 #4H-SiC [02Lin]
+    * N0 = 1, 1
+    * lambda = 0.125, 0.0317 #4H-SiC  [02Lin]
+    * k = 0.4, 0.4
+    * delta = 5.82e14, 2.0546e14
+    * A = 2.0, 2.0
+    * alpha = 0.0, 0.0
+    * N1 = 1.0, 1.0
+    * nu = 1.0, 1.0
+    * eta = 5.82e30, 2.055e+30
+    * l_crit = 1.0e-06, 1.0e-06
+  }
+
+IALMob:
+  {
+    * Extracted using [17Nog] and [18Nog]
+
+    EnormMinimum = 0
+    mumax = 700.0, 125.0
+    mumin = 56.0, 46.0
+    alpha = 0.68, 0.719
+    theta = 2.285, 2.247
+    n_ref = 9.68e16, 2.23e17
+    me_over_m0 = 1.0
+    mh_over_m0 = 1.258
+    B = 1.3e6, 8.1e5
+    C = 2.2e5, 8.36e3
+    delta = 1.0e20, 2.58e14
+    eta = 1.0e50, 1.0e50
+    N1 = 1.0, 1.0
+    N2 = 8e-12, 1.0
+    alpha_ph2d_A = 1.0, 1.0
+    alpha_ph2d_D = 5.0e-13, 8.0e-12
+    lambda_ph2d_A = -0.11, -0.109
+    lambda_ph2d_D = 0.65, 0.5
+    lambda = 1.0, 0.0
+    lambda_sr = 0.0, 0.0
+    A = 2.0, 2.0
+    alpha_sr = 0.0, 0.0
+    k = 0.4, 1.0
+    nu = 0.0, 0.0
+    s =	1.0, 0.3042
+    D1_inv = 0.001, 150.0
+    D2_inv = 0.0, 150.0
+    D1_acc = 1000.0, 200.0
+    D2_acc = 1000.0, 150.0
+    nsc_ref = 1.0e17, 1.0e18
+    ndop_ref = 1.0e18, 1.0e18
+    nu0_inv = 0.2, 1.5
+    nu1_inv = 0.5, 2.0
+    nu2_inv = 0.5, 0.5
+    nu0_acc = 0.2, 1.5
+    nu1_acc = 0.2, 2.0
+    nu2_acc = 0.5, 0.5
+    nu0_inv_A = 0.0, 0.1
+    nu0_acc_A = 0.0, 0.1
+    alpha1_inv = 0.0, 0.0
+    alpha2_inv = 0.0, 0.0
+    l_crit = 1.0e-6, 1.0e-6
+    l_crit_c = 1.0e-6, 1.0e-6
+    * l_crit_c = 2.0e-5, 1.0e-6 #for better agreement at higher doping concentration and for buried channel devices
+  }
+
+IALMob_aniso:
+  {
+    * Extracted using [17Nog] and [18Nog]
+
+    EnormMinimum = 0
+    mumax = 843.0, 125.0
+    mumin = 56.0, 46.0
+    alpha = 0.68, 0.719
+    theta = 2.285, 2.247
+    n_ref = 9.68e16, 2.23e17
+    me_over_m0 = 1.0
+    mh_over_m0 = 1.258
+    B = 1.3e6, 8.1e5
+    C = 2.2e5, 8.36e3
+    delta = 1.0e20, 2.58e14
+    eta = 1.0e50, 1.0e50
+    N1 = 1.0, 1.0
+    N2 = 8e-12, 1.0
+    alpha_ph2d_A = 1.0, 1.0
+    alpha_ph2d_D = 5.0e-13, 8.0e-12
+    lambda_ph2d_A = -0.11, -0.109
+    lambda_ph2d_D = 0.65, 0.5
+    lambda = 1.0, 0.0
+    lambda_sr = 0.0, 0.0
+    A = 2.0, 2.0
+    alpha_sr = 0.0, 0.0
+    k = 0.4, 1.0
+    nu = 0.0, 0.0
+    s =	1.0, 0.3042
+    D1_inv = 0.001, 150.0
+    D2_inv = 0.0, 150.0
+    D1_acc = 1000.0, 200.0
+    D2_acc = 1000.0, 150.0
+    nsc_ref = 1.0e17, 1.0e18
+    ndop_ref = 1.0e18, 1.0e18
+    nu0_inv = 0.2, 1.5
+    nu1_inv = 0.5, 2.0
+    nu2_inv = 0.5, 0.5
+    nu0_acc = 0.2, 1.5
+    nu1_acc = 0.2, 2.0
+    nu2_acc = 0.5, 0.5
+    nu0_inv_A = 0.0, 0.1
+    nu0_acc_A = 0.0, 0.1
+    alpha1_inv = 0.0, 0.0
+    alpha2_inv = 0.0, 0.0
+    l_crit = 1.0e-6, 1.0e-6
+    l_crit_c = 1.0e-6, 1.0e-6
+    * l_crit_c = 2.0e-5, 1.0e-6 #for better agreement at higher doping concentration and for buried channel devices
+  }
+
+NegInterfaceChargeMobility
+  { 
+    *         mu1 * (T/300)^T_exp * [1 + c/(c_trans*(NA,D/1e18)^N_exp1* (Nc/N0)^Nc_exp1)]^c_exp
+    * mu_ic = ---------------------------------------------------------------------------------
+    *                           [Nc/N0]^Nc_exp2 * D * f(En)
+    * Nc    = negative interface charge density
+    * N0    = 1e11/cm^2
+    * c     = n (for electrons) , p (for holes)
+    * f(En) = 1 - exp[-(En/E0)^En_exp]
+    * D     = exp[-dist/l_crit]
+    * dist  = distance from interface
+
+    mu1 = 40.0, 40.0 #[cm^2/Vs]
+    T_exp = 1.0, 1.0 #[1]
+    c_trans = 1.09e18, 1.0000e+18 #[cm^(-3)]
+    c_exp = 1.5, 1.5 #[1]
+    Nc_exp1 = 1, 1 #[1]
+    Nc_exp2 = 0.5, 0.5 #[1]
+    l_crit = 1.0000e-06, 1.0000e-06 #[cm]
+    E0 = 2.0000e+05, 2.0000e+05 #[V/cm]
+    En_exp = 2, 2 #[1]
+    N_exp1 = 0.528, 0.0
+  }
+
+NegInterfaceChargeMobility_aniso
+  {
+    *         mu1 * (T/300)^T_exp * [1 + c/(c_trans*(NA,D/1e18)^N_exp1* (Nc/N0)^Nc_exp1)]^c_exp
+    * mu_ic = ---------------------------------------------------------------------------------
+    *                           [Nc/N0]^Nc_exp2 * D * f(En)
+    * Nc    = negative interface charge density
+    * N0    = 1e11/cm^2
+    * c     = n (for electrons) , p (for holes)
+    * f(En) = 1 - exp[-(En/E0)^En_exp]
+    * D     = exp[-dist/l_crit]
+    * dist  = distance from interface
+
+    mu1 = 40.0, 40.0 #[cm^2/Vs]
+    T_exp = 1.0, 1.0 #[1]
+    c_trans = 1.09e18, 1.0000e+18 #[cm^(-3)]
+    c_exp = 1.5, 1.5 #[1]
+    Nc_exp1 = 1, 1 #[1]
+    Nc_exp2 = 0.5, 0.5 #[1]
+    l_crit = 1.0000e-06, 1.0000e-06 #[cm]
+    E0 = 2.0000e+05, 2.0000e+05 #[V/cm]
+    En_exp = 2, 2 #[1]
+    N_exp1 = 0.528, 0.0
+  }
+
+PosInterfaceChargeMobility
+  {
+    *         mu1 * (T/300)^T_exp * [1 + c/(c_trans*(NA,D/1e18)^N_exp1* (Nc/N0)^Nc_exp1)]^c_exp
+    * mu_ic = ---------------------------------------------------------------------------------
+    *                           [Nc/N0]^Nc_exp2 * D * f(En)
+    * Nc    = negative interface charge density
+    * N0    = 1e11/cm^2
+    * c     = n (for electrons) , p (for holes)
+    * f(En) = 1 - exp[-(En/E0)^En_exp]
+    * D     = exp[-dist/l_crit]
+    * dist  = distance from interface
+
+    mu1 = 40.0, 40.0 #[cm^2/Vs]
+    T_exp = 1.0, 1.0 #[1]
+    c_trans = 1.09e18, 1.0000e+18 #[cm^(-3)]
+    c_exp = 1.5, 1.5 #[1]
+    Nc_exp1 = 1, 1 #[1]
+    Nc_exp2 = 0.5, 0.5 #[1]
+    l_crit = 1.0000e-06, 1.0000e-06 #[cm]
+    E0 = 2.0000e+05, 2.0000e+05 #[V/cm]
+    En_exp = 2, 2 #[1]
+    N_exp1 = 0.528, 0.0
+  }
+
+PosInterfaceChargeMobility_aniso
+  {
+    *         mu1 * (T/300)^T_exp * [1 + c/(c_trans*(NA,D/1e18)^N_exp1* (Nc/N0)^Nc_exp1)]^c_exp
+    * mu_ic = ---------------------------------------------------------------------------------
+    *                           [Nc/N0]^Nc_exp2 * D * f(En)
+    * Nc    = negative interface charge density
+    * N0    = 1e11/cm^2
+    * c     = n (for electrons) , p (for holes)
+    * f(En) = 1 - exp[-(En/E0)^En_exp]
+    * D     = exp[-dist/l_crit]
+    * dist  = distance from interface
+
+    mu1 = 40.0, 40.0 #[cm^2/Vs]
+    T_exp = 1.0, 1.0 #[1]
+    c_trans = 1.09e18, 1.0000e+18 #[cm^(-3)]
+    c_exp = 1.5, 1.5 #[1]
+    Nc_exp1 = 1, 1 #[1]
+    Nc_exp2 = 0.5, 0.5 #[1]
+    l_crit = 1.0000e-06, 1.0000e-06 #[cm]
+    E0 = 2.0000e+05, 2.0000e+05 #[V/cm]
+    En_exp = 2, 2 #[1]
+    N_exp1 = 0.528, 0.0
+  }
+
+HighFieldDependence
+  {
+    * Caughey-Thomas model:
+    * mu_highfield = ((alpha+1)*mu_lowfield)/(alpha+(1+((alpha+1)*mu_lowfield*E/vsat)^beta)^(1/beta)) 
+    * beta = beta0 (T/T0)^betaexp.
+
+    beta0 = 1.2, 1.2 #[1]
+    betaexp = 1.0000e+00, 1.0000e+00 #[1]
+    alpha = 0.0000e+00, 0.0000e+00 #[1]
+
+    * Smoothing parameter for HydroHighField Caughey-Thomas model:
+    * if Tl < Tc < (1+K_dT)*Tl, then smoothing between low field mobility
+    * and HydroHighField mobility is used.
+
+    K_dT = 0.2, 0.2 #[1]
+
+    * Transferred-Electron Effect:
+    * mu_highfield = (mu_lowfield+(vsat/E)*(E/E0_TrEf)^4)/(1+(E/E0_TrEf)^4)
+
+    E0_TrEf = 4.0000e+03, 4.0000e+03 #[1]
+    Ksmooth_TrEf = 1, 1 #[1]
+
+    * For vsat either Formula1 or Formula2 can be used.
+
+	Vsat_Formula = 1, 1 #[1]
+
+    * Formula1 for saturation velocity: vsat = vsat0 (T/T0)^(-Vsatexp)
+    * (Parameter Vsat_Formula has to be not equal to 2)
+
+    vsat0 = 2.2e+07, 2.2e+07 #[00Lad], [00Kha] for electron
+    vsatexp = 0.44, 0.44 #[00Lad], [00Kha] for electron
+
+    #beta0 = 1.0, 1.2 #[09Tsi] for electron
+    #betaexp = 0.66, 1 #[09Tsi] for electron
+    #Vsat_Formula = 1, 1
+    #vsat0 = 2.2e+07, 2.2e+07 #[09Tsi] for electron
+    #vsatexp = 0.87, 0.44 #[09Tsi] for electron
+  }
+
+HighFieldDependence_aniso:
+  {
+    * Caughey-Thomas model:
+    * mu_highfield = ((alpha+1)*mu_lowfield)/(alpha+(1+((alpha+1)*mu_lowfield*E/vsat)^beta)^(1/beta)) 
+    * beta = beta0 (T/T0)^betaexp.
+
+    beta0 = 1.2, 1.2 #[1]
+    betaexp = 1.0000e+00, 1.0000e+00 #[1]
+    alpha = 0.0000e+00, 0.0000e+00 #[1]
+
+    * Smoothing parameter for HydroHighField Caughey-Thomas model:
+    * if Tl < Tc < (1+K_dT)*Tl, then smoothing between low field mobility
+    * and HydroHighField mobility is used.
+
+    K_dT = 0.2, 0.2 #[1]
+
+    * Transferred-Electron Effect:
+    * mu_highfield = (mu_lowfield+(vsat/E)*(E/E0_TrEf)^4)/(1+(E/E0_TrEf)^4)
+
+    E0_TrEf = 4.0000e+03, 4.0000e+03 #[1]
+    Ksmooth_TrEf = 1, 1 #[1]
+
+    * For vsat either Formula1 or Formula2 can be used.
+
+	Vsat_Formula = 1, 1 #[1]
+
+    * Formula1 for saturation velocity: vsat = vsat0 (T/T0)^(-Vsatexp)
+    * (Parameter Vsat_Formula has to be not equal to 2)
+
+    vsat0 = 1.9e+07, 1.9e+07 #[00Lad], vsat_perp/vsat_par = 1.16[96Nil], 1.17[04Ber]
+    vsatexp = 0.44, 0.44 #[00Lad]
+  }
+
+PooleFrenkel
+  { 
+    * TrapXsection = Xsec0*(1+Gpf) 
+    * Gpf = (1+(a-1)*exp(a))/a^2-0.5 where a = (1/kT)*(q^3*F/pi/e0/epsPF)^0.5 and F is the electric field. 
+	
+    epsPF = 9.66, 9.66 #[1]
+  }
+
+vanOverstraetendeMan * Impact Ionization:
+  { 
+    * G_impact = alpha_n n v_drift_n  +  alpha_p p v_drift_p
+    * with alpha = gamma a  exp(-b gamma/E) for E<E0 (low) and E>E0 (high)
+    * with gamma = tanh(hbarOmega/(2kT0)) / tanh(hbarOmega/(2kT))
+
+    a(low) = 1.4686e+06, 5.5222e+06 #[1/cm]
+    a(high) = 1.4686e+06, 5.5222e+06 #[1/cm]
+    b(low) = 1.2075e+07, 1.2724e+07 #[V/cm]
+    b(high) = 1.2075e+07, 1.2724e+07 #[V/cm]
+    E0 = 4.0000e+05, 4.0000e+05 #[V/cm]
+    hbarOmega = 1.0000e+03, 1.0000e+03 #[eV]
+  }
+
+vanOverstraetendeMan_aniso * Impact Ionization:
+  { 
+    * G_impact = alpha_n n v_drift_n  +  alpha_p p v_drift_p
+    * with alpha = gamma a  exp(-b gamma/E) for E<E0 (low) and E>E0 (high)
+    * with gamma = tanh(hbarOmega/(2kT0)) / tanh(hbarOmega/(2kT))
+
+    a(low) = 1.88e+06, 1.64e+06 #[1/cm]
+    a(high) = 1.88e+06, 1.64e+06 #[1/cm]
+    b(low) = 1.64e+07, 1.17e+07 #[V/cm]
+    b(high) = 1.64e+07, 1.17e+07 #[V/cm]
+    E0 = 1e+06, 1e+06 #[V/cm]
+    hbarOmega = 0.1, 0.1 #[eV]
+  }
+
+Hatakeyama
+  {
+    a_0001 = 1.76e08, 3.41e08 #[09Hat], E//c-axis
+    a_1120 = 2.10e07, 2.96e07 #[09Hat], E perp. to c-axis
+    * a_0001 = 8.19e9, 4.51e6 #[14Niw], at 300K, E//c-axis
+    b_0001 = 3.30e07, 2.50e07 #[09Hat], E//c-axis
+    b_1120 = 1.70e07, 1.60e07 #[09Hat], E perp. to c-axis
+    * b = 3.94e7, 1.28e7 #[14Niw], at 300K, E//c-axis
+    hbarOmega = 0.19, 0.19 #[09Hat]
+    theta = 1, 1 #[09Hat]
+  }
+
+OkutoCrowell                            
+  {
+    * perp. to c-axis
+    a = 2.10e07, 2.96e07 #[09Hat], E perp. to c-axis
+    b = 1.70e07, 1.60e07 #[09Hat], E perp. to c-axis			
+    c =	0.0, 7.511e-3 #[14Niw]		
+    d =	0.0, 1.381e-3 #[14Niw]		 
+    gamma = 0.0, 0.0
+    delta = 1.0, 1.0 #[14Niw]						
+  }
+
+OkutoCrowell_aniso                     
+  {
+    * parallel to c-axis                 
+    a = 1.76e8, 3.41e8 #[09Hat], at 300K, E//c-axis
+    * a = 8.19e9, 4.51e6 #[14Niw], at 300K, E//c-axis
+    b = 3.3e7, 2.50e7 #[09Hat], E//c-axis
+    * b = 3.94e7, 1.28e7 #[14Niw], at 300K, E//c-axis
+    c =	0.0, 7.511e-3 #[14Niw]			
+    d = 0.0, 1.381e-3 #[14Niw]		
+    gamma = 0.0, 0.0
+    delta = 1.0, 1.0 #[14Niw]			
+										
+    * a = 0.1, 4.828e6 #[97Kon], for hole, adjusted to OkutoCrowell model, E//c-axis
+    * b = 6.346e6, 1.334e7 #[97Kon], for hole, adjusted to OkutoCrowell model(E//c-axis)
+    * c = 0.0, 0.0
+    * d = 0.0, 0.0
+    * gamma = 1.0, 0.0
+    * delta = 2.0, 1.0		
+  }
+
+Scharfetter
+  {
+    taumin = 1e-7, 1e-7
+    taumax = 2.5e-6, 0.5e-6 #the actual value of the life times depend on the special process conditions 
+    Nref = 1e16, 1e16 #[94Ruf]
+    gamma = 0.3, 0.3 #[94Ruf]
+    Talpha = 1.72, 1.72	#the actual value of the life times depend on the special process conditions
+    Etrap = 0.0 #trap level at mid band gap
+  }
+
+Auger
+  {
+    A = 5.0e-31, 2.0e-31 #4H-SiC, [97Gal]
+    * A = 3.0e-29, 3.0e-29 #6H-SiC, [98Ram]
+    B = 0.0, 0.0 #to disable temp.dep.
+    C = 0.0, 0.0 #to disable temp.dep.
+    H = 0.0, 0.0
+    N0 = 1.0e+18, 1.0e+18
+  }
+
+    Ionization {
+        Species ("pMagnesiumActiveConcentration") {
+			type= acceptor
+			E_0= 0      # Disable ionization
+			alpha= 0
+			g= 1        # Use 1 or 2
+			Xsec = 1.0e-12
+		}
+        Species ("BoronActiveConcentration") {
+			type= acceptor
+			E_0= 0.3    # Approximate Boron ionization energy in 4H-SiC (check literature)
+			alpha= 1e-8 # Placeholder capture coefficient
+			g= 2        # Degeneracy factor
+			Xsec = 1.0e-12
+		}
+    }
