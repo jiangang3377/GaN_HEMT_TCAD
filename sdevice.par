@@ -1,0 +1,60 @@
+#define ParFileDir .
+
+Material="4HSiC" {
+  #includeext "ParFileDir/4HSiC.par"
+}
+Material="6HSiC" {
+  #includeext "ParFileDir/6HSiC.par"
+}
+
+Material="AlGaN" {
+  #includeext "ParFileDir/AlGaN.par"
+}
+Material="AlN" {
+  #includeext "ParFileDir/AlN.par"
+}
+Material="GaN" {
+  #includeext "ParFileDir/GaN.par"
+}
+Material="Si3N4" {
+  #includeext "ParFileDir/Si3N4.par"
+}
+Material="Silicon" {
+  #includeext "ParFileDir/Silicon.par"
+}
+
+Material="Al2O3" {
+  #includeext "ParFileDir/Al2O3.par"
+}
+
+LatticeParameters {
+	X = (0, 0,-1)
+	Y = (1, 1, 0)
+}
+
+ThermioncEmission {
+	Formula= 1
+}
+
+BarrierTunneling "NLM_Gate" {
+	mt= 0.2,0.25
+}
+
+BarrierTunneling "NLM_Bot" {
+	mt= 0.2,0.25
+}
+
+BarrierTunneling "NLM_Top" {
+	mt= 0.2,0.25
+}
+
+Region= "Channel" {
+	ConstantMobility:
+	{ * mu_const = mumax (T/T0)^(-Exponent)
+		mumax	= 1800 ,	1.5000e+02	# [cm^2/(Vs)]
+		Exponent	= 1 ,	2.1	# [1]
+		mutunnel	= 0.05 ,	0.05	# [cm^2/(Vs)]
+	}
+}
+ 
+
